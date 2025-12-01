@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queijos</title>
+  <link rel="stylesheet" href="queijos2.css">
+</head>
+<body>
+  <header>
+    <h1>Queijos - Sabor e Qualidade no Seu Mercado</h1>
+    <p>Conheça nossa variedade de queijos frescos, maturados e especiais.</p>
+  </header>
+
+  <a href="../index.html" class="btn-voltar">
+    <span class="setina"></span>
+    Voltar
+  </a>
+
+  <div class="queijos1-container">
+    <section class="queijo-card">
+      <img src="Queijofigueira.webp" alt="Queijo Minas Frescal">
+      <div class="card-content">
+        <h2>Queijo Minas Frescal</h2>
+        <span class="preco">R$ 25,00</span>
+        <button class="comprar" onclick="comprarProduto('Queijo Minas Frescal', 'R$ 25,00')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="queijodojordao.webp" alt="Muçarela">
+      <div class="card-content">
+        <h2>Muçarela</h2>
+        <span class="preco">R$ 28,90</span>
+        <button class="comprar" onclick="comprarProduto('Muçarela', 'R$ 28,90')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="queijocatedral.webp" alt="Parmesão">
+      <div class="card-content">
+        <h2>Parmesão</h2>
+        <span class="preco">R$ 36,00</span>
+        <button class="comprar" onclick="comprarProduto('Parmesão', 'R$ 36,00')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="queijogoudajovemlejane.webp" alt="Queijo Tilsit"> 
+      <div class="card-content"> 
+        <h2>Queijo Tilsit</h2>  
+        <span class="preco">R$ 69,00</span> 
+        <button class="comprar" onclick="comprarProduto('Tilsit', 'R$ 69,00')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="Queijos6.webp" alt="Queijo artesanal de Alagoa">
+      <div class="card-content">
+        <h2>Queijo artesanal de Alagoa</h2>
+        <span class="preco">R$ 50,00</span>
+        <button class="comprar" onclick="comprarProduto('Queijo artesanal de Alagoa', 'R$ 50,00')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="ima.jpg" alt="Queijo Camembert">
+      <div class="card-content">
+        <h2>Queijo Camembert</h2>
+        <span class="preco">R$ 43,89</span>
+        <button class="comprar" onclick="comprarProduto('Camembert', 'R$ 43,89')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="cheese.jpg" alt="Queijo Cheddar">
+      <div class="card-content">
+        <h2>Queijo Cheddar</h2>
+        <span class="preco">R$ 120,00</span>
+        <button class="comprar" onclick="comprarProduto('Cheddar', 'R$ 120,00')">Comprar</button>
+      </div>
+    </section>
+
+    <section class="queijo-card">
+      <img src="chees.jpg" alt="Queijo Chèvre">
+      <div class="card-content">
+        <h2>Queijo Chèvre</h2>
+        <span class="preco">R$ 220,90</span>
+        <button class="comprar" onclick="comprarProduto('Chèvre', 'R$ 220,90')">Comprar</button>
+      </div>
+    </section>
+  </div>
+
+  <footer id="rodape">
+    <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+    <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+    <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function comprarProduto(nome, preco) {
+      const params = new URLSearchParams();
+      params.append("produto", nome);
+      params.append("preco", preco);
+      window.location.href = "comprar.html?" + params.toString();
+    }
+  </script>
+</body>
+</html>
